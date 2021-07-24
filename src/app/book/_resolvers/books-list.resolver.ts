@@ -8,7 +8,6 @@ export class BooksListResolver implements Resolve<any> {
 
   resolve(route: ActivatedRouteSnapshot) {
     const query = route.queryParams;
-    console.log(query)
       return this.bookService.listBooks(query);
   }
 }

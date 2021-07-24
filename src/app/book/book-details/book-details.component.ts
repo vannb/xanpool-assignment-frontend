@@ -19,6 +19,6 @@ export class BookDetailsComponent implements OnInit {
   ngOnInit() {
     const routeData = this.route.snapshot.data;
     this.book = routeData.book;
-    this.titleService.setTitle(this.book.title);
+    this.titleService.setTitle(`Book: ${this.book.title}`);
   }
 }

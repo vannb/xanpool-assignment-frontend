@@ -15,7 +15,6 @@ export class BookService {
       url += `&query=${query}`;
     }
 
-    console.log(url);
     return this.http.get<any>(url).pipe(
       map(res => res)
     );
