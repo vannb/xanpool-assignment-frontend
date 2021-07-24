@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center">
+    <h1>Book: {{book.title}}</h1>
+    <a [routerLink]="['../']" class="btn btn-primary px-5">Back</a>
+  </div>
+  <div class="card p-3">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100 img-thumbnail" src="{{book.cover_url}}">
+      </div>
+      <div class="col-12 col-sm-6 col-lg-9">
+        <div>Author: {{book.author}}</div>
+        <div>Year: {{book.year}}</div>
+        <div>{{book.description}}</div>
+      </div>
+    </div>
+  </div>
+</div>

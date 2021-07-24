@@ -1,0 +1,4 @@
+<div class="card p-2 mb-4 text-center">
+  <a class="book-cover" [routerLink]="[book.id]" [style.background-image]="'url(' + book.cover_url + ')'"> </a>
+  <a [routerLink]="[book.id]" class="py-3"><strong>{{book.title}}</strong></a>
+</div>
